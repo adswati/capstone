@@ -1,0 +1,87 @@
+/* CSS */
+.article-list-container .default-content-wrapper h2:not(#all-articles) {
+    font-weight: normal;
+    font-size: var(--font-size-h3);
+    margin-bottom: 30px;
+  }
+  
+  .article-list-container .default-content-wrapper h2::after {
+    content: "";
+    border-bottom: 2px solid var(--brand-primary-color);
+    display: block;
+    padding-top: 8px;
+    width: 84px;
+  }
+  
+  .article-list-container .article-list > ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(257px, 1fr));
+    grid-gap: 40px 15px;
+  }
+  
+  .article-list-container .article-list > ul > li {
+    background-color: var(--background-color);
+  }
+  
+  .article-list-container .article-list .cards-card-body {
+    margin: 0;
+  }
+  
+  .article-list-container .article-list .cards-card-body .button-container {
+    margin: 0;
+    padding: 0;
+    line-height: 0;
+  }
+  
+  .article-list-container .article-list .cards-card-body .button-container a {
+    margin: 0;
+    background-color: transparent;
+    padding: 3px 0 0;
+    color: var(--background-color-dark);
+    font-family: var(--body-font-family);
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+    overflow: initial;
+    white-space: initial;
+    text-align: initial;
+    line-height: 1.5;
+  }
+  
+  .article-list-container .article-list .cards-card-body p:nth-child(2) {
+    color: dimgray;
+    display: block;
+    font-size: 14px;
+    margin-top: 1rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-transform: uppercase;
+    white-space: nowrap;
+  }
+  
+  .article-list-container .article-list .cards-card-image {
+    line-height: 0;
+  }
+  
+  .article-list-container .article-list > ul > li img {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+  }
+  
+  @media (width >= 900px) {
+      .article-list-container .article-list > ul {
+        grid-gap: 24px;
+      }
+  
+      .article-list-container .article-list .cards-card-body .button-container a {
+        font-size: var(--body-font-size-m);
+      }
+      
+      .article-list-container .article-list .cards-card-body p:nth-child(2) {
+        font-size: var(--body-font-size-xs);
+      }
+  }

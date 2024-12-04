@@ -18,6 +18,238 @@
 .columns > div > .columns-img-col img {
   display: block;
 }
+.feature-article {
+  margin-top:40px;
+}
+.feature-article .columns > div { 
+  display: flex;
+  background-color: #ebebeb;
+}
+
+.feature-article .columns > div >.columns-img-col { 
+  display: flex;
+  flex:2;
+  align-self:stretch;
+}
+
+.feature-article .columns > div >.columns-img-col img{
+  height: 100%;
+  object-fit: cover;
+}
+.feature-article .columns > div > div:last-child {
+  padding: 3.5em 2em 2em;
+}
+.feature-article .columns > div > div h2{
+  font-family: var(--fontFamilySerif, "Asar", Georgia, "Times New Roman", Times, serif);
+  margin: .5em 0;
+}
+.feature-article .columns > div > div p{
+  font-size: 14px;
+}
+
+
+.magazine-detail .columns-wrapper .columns div {
+  align-items: flex-start;
+  gap: 60px;
+}
+
+.magazine-detail .columns-wrapper .columns div > div:first-child {
+  flex: 3;
+}
+
+.magazine-detail .columns-wrapper .columns div > div:first-child h4{
+  font-family: "Source Sans 3", Arial, sans-serif;
+  font-weight: var(--fontWeightBold, 600);
+  text-transform: uppercase;
+  font-size: var(--body-font-size-s);
+  margin: 20px 0;
+}
+
+
+.magazine-detail .columns-wrapper .columns div > div:first-child p {
+  font-size: 18px;
+    line-height: 2.5;
+    margin: 0 0 13.5px;
+    text-align: justify;
+  }
+
+  .magazine-detail .columns-wrapper .columns div > div:first-child h2:not(:nth-child(1))::after{
+    border-bottom: 2px solid var(--brandPrimary, #ffea00);
+    content: "";
+    display: block;
+    padding-top: 8px;
+    margin-bottom: 12px;
+    width: 84px;
+  }
+  
+.magazine-detail .columns-wrapper .columns div > div:first-child p strong{
+  font-weight: 500;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+.magazine-detail .columns-wrapper .columns div > div:first-child hr {
+  height: 1px;
+  content: " ";
+  background-color: #ebebeb;
+  border: none;
+  margin: 4rem auto !important;
+}
+.magazine-detail .columns-wrapper .columns div > div:first-child table:first-of-type{
+  background-color: #ebebeb;
+  padding: 1em;
+  margin: 1em 0;
+}
+.magazine-detail .columns-wrapper .columns div > div:first-child table:first-of-type tr td{
+  display:block;
+}
+
+.magazine-detail .columns-wrapper .columns div > div:first-child table:first-of-type tr td h2{
+  margin:0px;
+}
+.magazine-detail .columns-wrapper .columns div > div:first-child table {
+  width: 100%;
+}
+
+.magazine-detail .columns-wrapper .columns div > div:first-child table tr {
+  display: flex;
+}
+
+.magazine-detail .columns-wrapper .columns div > div:first-child table img {
+  height: 60px;
+  width: 60px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.magazine-detail .columns-wrapper .columns div > div:first-child table h4{
+  font-family: var(--fontFamilySerif, "Asar", Georgia, "Times New Roman", Times, serif);
+  font-size: var(--fontSizeLarge, 24px);
+  margin-bottom: .25rem;
+  margin-left: 25px;
+  margin-top: 0;
+  font-weight: normal;
+  text-transform: capitalize;
+}
+
+.magazine-detail .columns-wrapper .columns div > div:first-child table h5{
+  font-family: var(--body-font-family);
+  color: dimgray;
+  font-size: 14px;
+  margin-left: 25px;
+  text-transform: uppercase;
+}
+
+.magazine-detail .columns-wrapper .columns div > div:first-child table td:first-child {
+  flex: 1;
+  max-width: max-content;
+}
+
+.magazine-detail .columns-wrapper .columns div > div:first-child table td:nth-child(2) {
+  flex: 2;
+}
+
+.magazine-detail .columns-wrapper .columns div > div:first-child table td:last-child {
+  display: flex;
+  flex: 1;
+}
+
+.magazine-detail .columns-wrapper .columns div > div:first-child table td:last-child a {
+  background-color: var(--background-color-dark);
+  margin: 0;
+  padding: 5px 10px;
+  line-height: 1;
+}
+
+.magazine-detail .columns-wrapper .columns div > div:first-child table td:last-child img {
+  width: 25px;
+  height: auto;
+}
+
+.magazine-detail .columns-wrapper .columns div > div:last-child p:first-child {
+  font-size: 14px;
+  text-transform: uppercase;
+  color: var(--background-color-dark);
+  font-weight: 600;
+}
+
+.magazine-detail .columns-wrapper .columns div > div:last-child h4{
+  font-family:  "Source Sans 3", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  margin-top: 40px;
+  margin-bottom: 0;
+  text-transform: uppercase;
+}
+
+.magazine-detail .columns-wrapper .columns div > div:last-child h5{
+  font-family:  "Source Sans 3", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 0;
+  text-transform: uppercase;
+}
+
+.magazine-detail .columns-wrapper .columns div > div:last-child h5#download-download {
+  font-family:  "Source Sans 3", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+}
+
+.magazine-detail .columns-wrapper .columns div > div:last-child h5#download-download a{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  background-color: #202020;
+  color: #fff;
+  padding: 15px 30px;
+  max-width: fit-content;
+  line-height: normal;
+}
+
+.magazine-detail .columns-wrapper .columns div > div:last-child h6{
+  font-family:  "Source Sans 3", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: dimgray;
+  font-size: 12px;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+
+.magazine-detail .columns-wrapper .columns div > div:last-child p:not(:first-child){
+display: flex;
+flex-direction: column;
+border-left: 5px solid #ebebeb;
+height: 90pt;
+padding: .5rem 1rem;
+cursor: pointer;
+}
+
+.magazine-detail .columns-wrapper .columns div > div:last-child p:not(:first-child):hover {
+  background:#ffea00;
+    border-color: #202020;
+}
+
+
+.magazine-detail .columns-wrapper .columns div > div:last-child p:not(:first-child) a{
+  padding: 5px;
+  text-transform: uppercase;
+}
+
+.magazine-detail .columns-wrapper .columns div > div:last-child p:not(:first-child) a:hover{
+  text-decoration: none;
+}
+
+.magazine-detail .columns-wrapper .columns div > div:last-child p:not(:first-child) a:first-child {
+  font-size: var(--body-font-size-m);
+  color: var(--background-color-dark);
+}
+
+.magazine-detail .columns-wrapper .columns div > div:last-child p:not(:first-child) a:last-child {
+  font-size: 12px;
+  color: dimgray;
+}
+
 
 @media (width >= 900px) {
   .columns > div {

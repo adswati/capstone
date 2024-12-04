@@ -1,0 +1,134 @@
+body.modal-open {
+  overflow: hidden;
+}
+
+.modal dialog::backdrop {
+  background-color: transparent;
+}
+
+.modal dialog {
+  overscroll-behavior: none;
+  overflow-y: hidden;
+  position: relative;
+  width: calc(-48px + 100vw);
+  max-width: 400px;
+  max-height: calc(100dvh - (2 * var(--header-height)) - 64px);
+  padding: 0px;
+  border: 1px solid var(--dark-color);
+  background-color: rgb(32, 32, 32);
+  box-shadow: dimgray 0px 10px 20px;
+  margin: auto;
+}
+
+.modal dialog .modal-content {
+  box-sizing: border-box;
+  overflow-y: auto;
+  overscroll-behavior: none;
+  width: 100%;
+  max-height: calc(100dvh - (2 * var(--header-height)) - 48px);
+  padding: 0px 24px 24px;
+}
+
+@media (width >= 900px) {
+  .modal dialog {
+      width: calc(-64px + 100vw);
+  }
+
+  .modal dialog .modal-content {
+      max-height: calc(100dvh - (2 * var(--header-height)) - 64px);
+      padding: 0px 32px 32px;
+  }
+}
+
+.modal .close-button {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  width: 44px;
+  height: 44px;
+  margin: 0px;
+  border: none;
+  border-radius: 0px;
+  padding: 0px;
+  background-color: transparent;
+  color: rgb(255, 255, 255);
+  line-height: 0;
+}
+
+.modal .close-button .icon.icon-close {
+  content: "";
+  width: 24px;
+  height: 24px;
+}
+
+.modal .close-button .icon.icon-close::before, .modal .close-button .icon.icon-close::after {
+  content: "";
+  box-sizing: border-box;
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
+  width: 24px;
+  height: 2px;
+  border-radius: 2px;
+  background-color: currentcolor;
+}
+
+.modal .close-button .icon.icon-close::after {
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+.modal dialog .section {
+  padding: 0px;
+}
+
+.modal dialog h2 {
+  color: rgb(255, 255, 255);
+  font-size: var(--heading-font-size-xl);
+  margin-top: 15px;
+}
+
+.modal dialog h2::after {
+  border-bottom: 2px solid var(--brand-primary-color);
+  content: "";
+  display: block;
+  padding-top: 8px;
+  width: 84px;
+}
+
+.modal dialog p {
+  font-size: var(--heading-font-size-m);
+  color: rgb(255, 255, 255);
+  font-weight: normal;
+  line-height: 1.5;
+  margin: 0px;
+  font-family: var(--heading-font-family);
+}
+
+.modal dialog form label {
+  display: none;
+}
+
+.modal dialog form input, .modal dialog form input:hover, .modal dialog form textarea, .modal dialog form textarea:hover {
+  background-color: transparent;
+  border: 1px solid var(--background-color-light);
+  color: rgb(255, 255, 255);
+  height: 66px;
+}
+
+.modal dialog form ::placeholder {
+  text-transform: uppercase;
+}
+
+.modal dialog .form input:focus, .modal dialog .form select:focus, .modal dialog .form textarea:focus {
+  outline: 0px;
+}
+
+.modal dialog .form form > .field-wrapper.plaintext-wrapper {
+  margin-top: 10px;
+}
+
+.modal dialog .form form > .field-wrapper.text-wrapper {
+  margin-top: 10px;
+}

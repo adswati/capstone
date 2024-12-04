@@ -8,12 +8,12 @@
 }
 
 .cards > ul > li {
-  border: 1px solid #dadada;
   background-color: var(--background-color);
 }
 
 .cards .cards-card-body {
   margin: 16px;
+  text-transform:uppercase;
 }
 
 .cards .cards-card-image {
@@ -24,4 +24,74 @@
   width: 100%;
   aspect-ratio: 4 / 3;
   object-fit: cover;
+}
+.cards .cards-card-body p:last-child{
+  white-space:nowrap;
+  overflow:hidden;
+  text-overflow:ellipsis;
+  color:dimgray;
+  font-size: var(--body-font-size-xs);
+}
+.cards .cards-card-body p:nth-child(2) {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+main .members-only {
+  margin-top: -20px;
+  margin-bottom: 50px;
+}
+
+.members-only .cards .cards-card-body h2{
+  font-family: "Source Sans 3", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: var(--fontSizeMedium, 18px);
+  font-weight: var(--fontWeightBold, 600);
+  text-transform: uppercase;
+}
+
+.members-only .cards .cards-card-body p {
+  font-size: 14px;
+  text-transform: uppercase;
+  font-family: "Source Sans 3", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.members-only .cards ul li{
+  opacity: 0.65;
+}
+
+.members-only .cards .cards-card-body p:last-child{
+  background-color: #ebebeb;
+  color: dimgray;
+  font-size: var(--fontSizeSmall, 14px);
+  padding: .5em 1em;
+  text-transform: uppercase;
+  width: fit-content;
+  margin: 1em 0;
+}
+
+.members-only .cards .cards-card-image img{
+  margin-top: 7px;
+  margin-bottom: 7px;
+}
+
+.members-only .cards ul li::before {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: -webkit-gradient(linear, right bottom, left top, from(hsl(0deg 0% 100% / 0%)), color-stop(50%, hsl(0deg 0% 100% / 0%)), color-stop(50%, var(--brandPrimary, #ffea00)), to(var(--brandPrimary, #ffea00)));
+  background: linear-gradient(to top left, hsl(0deg 0% 100% / 0%) 0, hsl(0deg 0% 100% / 0%) 50%, var(--brandPrimary, #ffea00) 50%, var(--brandPrimary, #ffea00) 100%);
+  color: #000;
+  content: "🔒";
+  font-family: wknd-icon-font !important;
+  font-size: 1.25rem;
+  font-size: 24px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 400;
+  line-height: 1;
+  padding: 9pt;
+  position: relative;
+  text-transform: none;
+  top: 49px;
+  z-index: 2;
 }

@@ -1,11 +1,27 @@
 footer {
-  background-color: var(--light-color);
+  background-color: #202020;
   font-size: var(--body-font-size-xs);
+  color: #ebebeb;
+}
+
+footer .default-content-wrapper {
+  margin-top: 50px;
+  line-height: 1.25;
+  font-size: 9pt;
+}
+
+footer .default-content-wrapper p:not(:last-child){
+margin-bottom: 15px !important;
+}
+
+footer .default-content-wrapper a {
+  color: #ebebeb;
+  text-decoration: underline;
 }
 
 footer .footer > div {
   margin: auto;
-  max-width: 1200px;
+  max-width: 1100px;
   padding: 40px 24px 24px;
 }
 
@@ -13,8 +29,98 @@ footer .footer p {
   margin: 0;
 }
 
+footer .columns ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  gap: 10px;
+}
+
+footer .columns.upper-footer > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer .columns.upper-footer > div > div:first-child{
+  flex-basis: 16%;
+}
+
+footer .columns.upper-footer > div > div:nth-child(2){
+  flex-basis: 50%;
+}
+
+footer .columns.upper-footer > div > div:last-child h5{
+  font-weight: 500;
+  margin-right: 0;
+}
+
+footer .columns.upper-footer > div > div:last-child{
+  display: flex;
+  flex-basis: 34%;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+footer .columns.upper-footer > div > div:last-child table td{
+  margin-left: 20px;
+  display: flex;
+  background-color: #ebebeb;
+}
+
+footer .columns.upper-footer > div > div:last-child table td img{
+  width: 20px;
+  height: auto;
+  margin: 10px 10px 5px;
+}
+
+footer ul li {
+  color: #fff !important;
+  font-family: 'Source Sans 3', sans-serif !important;
+  text-transform: uppercase;
+}
+
+footer .columns.upper-footer > div > div img {
+  width: 128px;
+  height: auto;
+  
+}
+
+footer .columns ul li a {
+  color: #ebebeb;
+  font-size: var(--body-font-size-xs);
+  font-weight: normal;
+  text-transform: uppercase;
+  padding: 0 35px 0 0;
+}
+
+footer .columns h5 {
+  text-transform: uppercase;
+  font-size: var(--body-font-size-s);
+  margin: 0 15px 0 0;
+  font-family: var(--body-font-family);
+}
+
 @media (width >= 900px) {
   footer .footer > div {
     padding: 40px 32px 24px;
+  }
+}
+
+@media (width < 900px) {
+  .columns > div > .columns-img-col {
+    margin-bottom: 20px;
+  }
+
+  footer .columns.upper-footer > div {
+    align-items: start;
+  }
+
+  footer .columns ul {
+    flex-direction: column;
+  }
+
+  footer .columnsupper-footer > div > div:last-child table td p {
+    margin-left: -2px;
   }
 }
