@@ -7,8 +7,10 @@ header {
   transition: padding 0.3s ease;
   width: 100vw;
 }
-
-
+header.small .nav-wrapper {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
 
 header.small .nav-wrapper {
   box-shadow: 0 8px 20px 0 rgb(0 0 0 / 26%);
